@@ -87,21 +87,6 @@ class App(tk.Tk):
         exit_button = tk.Button(self, text='Logout', bg='#A877BA', font='bold', command=self.destroy)
         exit_button.grid(row=20, column=12)
 
-
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
-        SERVER_URL = "http://192.168.1.17:4444/";
-        url1 = requests.get("http://192.168.1.17:4444/forward/")
-        url2 = requests.get("http://192.168.1.17:4444/left/")
-        url3 = requests.get("http://192.168.1.17:4444/right/")
-        url4 = requests.get("http://192.168.1.17:4444/backward/")
-        url5 = requests.get("http://192.168.1.17:4444/stop/")
-        self.configure(bg='#639c8f')
-        self.geometry('500x500')
-        self.title('Python Client')
-        self.resizable(False, False)
-
         display_label1 = Label(self, text="Control Panel: ", bg='#639c8f', fg='#e21d76', font='bold')
         display_label1.grid(row=1, column=0, sticky=tk.NW, padx=0, pady=0)
 
@@ -171,5 +156,9 @@ if __name__ == "__main__":
 
 
 if __name__ == "__main__":
+    self.configure(bg='#639c8f')
+    self.geometry('500x500')
+    self.title('Python Client')
+    self.resizable(False, False)
     app = App()
     app.mainloop()
