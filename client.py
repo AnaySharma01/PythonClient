@@ -3,16 +3,8 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import font
 from tkinter import messagebox
-import requests
+#import requests
 
-class App(tk.Tk):
-    def __init__(self):
-        super().__init__()import tkinter as tk
-from tkinter import *
-from tkinter import ttk
-from tkinter import font
-from tkinter import messagebox
-import requests
 
 class App(tk.Tk):
     def __init__(self):
