@@ -10,7 +10,7 @@ root.geometry('500x500')
 root.title('Python Client')
 root.resizable(False,False)
 
-e1 = IntVar()
+e1 = StringVar()
 e2 = StringVar()
 
 username = Label(root,text="Enter your username: ",bg = '#639c8f',fg='#e21d76',font = 'bold')
