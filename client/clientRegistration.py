@@ -42,5 +42,3 @@ def save():
 save_everything = Button(root,text="Save",command=save, bg='#fcba03',font = 'bold')
 save_everything.grid(row = 500, column = 0)
 
-
-root.mainloop()
