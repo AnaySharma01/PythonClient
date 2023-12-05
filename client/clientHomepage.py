@@ -3,7 +3,8 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import font
 from tkinter import messagebox
-from clientHomepage import *
+from clientLogin import *
+from clientRegistration import *
 
 def loginFunction():
     loginWindow()
