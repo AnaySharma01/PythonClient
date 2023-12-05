@@ -3,7 +3,6 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import font
 from tkinter import messagebox
-from clientLogin import *
 
 GUI = tk.Tk()
 GUI.configure(bg = '#639c8f')
