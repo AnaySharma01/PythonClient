@@ -5,7 +5,6 @@ from tkinter import font
 from tkinter import messagebox
 from login import *
 
-
 def loginFn():
     loginWindow()
 
