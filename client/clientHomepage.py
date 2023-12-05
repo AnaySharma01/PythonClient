@@ -3,10 +3,13 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import font
 from tkinter import messagebox
-from login import *
+from clientHomepage import *
 
 def loginFn():
     loginWindow()
+    
+def registrationFn():
+    registrationWindow()
 
 root = tk.Tk() 
 root.configure(bg = '#639c8f')
