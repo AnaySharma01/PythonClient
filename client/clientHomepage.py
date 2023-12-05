@@ -5,10 +5,10 @@ from tkinter import font
 from tkinter import messagebox
 from clientHomepage import *
 
-def loginFn():
+def loginFunction():
     loginWindow()
     
-def registrationFn():
+def registrationFunction():
     registrationWindow()
 
 root = tk.Tk() 
@@ -17,10 +17,10 @@ root.geometry('500x500')
 root.title('Python Client')
 root.resizable(False,False)
 
-register = Button(text ="Registration")
+register = Button(text ="Registration", command = registrationFunction)
 register.grid(row = 1, column = 1)
 
-loginbtn = Button(text ="Login", command = loginFn)
+loginbtn = Button(text ="Login", command = loginFunction)
 loginbtn.grid(row = 3, column = 1)
 
 exit_button = Button(root, text = 'Exit', bg='#A877BA',font = 'bold', command = root.destroy)
