@@ -12,6 +12,15 @@ GUI.title('Python Client')
 GUI.resizable(False,False)
 display_label1 = Label(GUI,text="Control Panel: ",bg = '#639c8f',fg='#e21d76',font = 'bold')
 display_label1.grid(row = 1, column = 0)
+
+def moveRobot(direction):
+    apiUrl = SERVER_URL + "move?direction=" + direction + "&turn=" + "0" + "&time=" + "0";
+    response = requests.get(apiUrl)
+    #if "success" == json.loads(response.text):
+        #label_log.config(text = label_log.cget("text") +"\n"+ datetime.now().strftime("%Y-%m-%d %H:%M:%S") +" :" + user + " - moved the robot in the " +direction + " direction ")
+    #else:
+        #messagebox.showinfo("Error", response.text)   
+       
 def moveForward():
    msg = messagebox.showinfo("Robot Moved", "Forward")
 forward = Button(text ="↑", command = moveForward)
