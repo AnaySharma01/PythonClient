@@ -1,8 +1,5 @@
 import tkinter as tk
 from tkinter import *
-from tkinter import ttk
-from tkinter import font
-from tkinter import messagebox
 from clientLogin import *
 
 GUI = tk.Tk()
