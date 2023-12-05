@@ -3,20 +3,39 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import font
 from tkinter import messagebox
+import main
+import clientGUI
+import homePage
 
-root = tk.Tk()
-root.configure(bg = '#639c8f')
-root.geometry('500x500')
-root.title('Python Client')
-root.resizable(False,False)
+clientLogin = tk.Tk()
+clientLogin.configure(bg = '#639c8f')
+clientLogin.geometry('500x500')
+clientLogin.title('Python Client')
+clientLogin.resizable(False,False)
 
-register = Button(text ="Registration")
-register.grid(row = 1, column = 1)
+e1 = StringVar()
+e2 = StringVar()
 
-register = Button(text ="Login")
-register.grid(row = 3, column = 1)
+username = Label(clientLogin,text="Enter your username: ",bg = '#639c8f',fg='#e21d76',font = 'bold')
+username.grid(row = 0, column = 0)
 
-exit_button = tk.Button(root, text = 'Exit', bg='#A877BA',font = 'bold', command = root.destroy)
-exit_button.grid(row = 20, column = 12)
+password = Label(clientLogin,text="Enter your password: ",bg = '#639c8f',fg='#e21d76',font = 'bold')
+password.grid(row = 1, column = 0)
 
-root.mainloop()
+username = Entry(clientLogin,textvariable = e1)
+username.grid(row = 0, column = 1)
+
+password = Entry(clientLogin,textvariable = e2)
+password.grid(row = 1, column = 1)
+
+def save():
+  e1.get()
+  e2.get()
+
+save_everything = Button(clientLogin,text="Save",command=save, bg='#fcba03',font = 'bold')
+save_everything.grid(row = 500, column = 0)
+
+logout = tk.Button(clientLogin, text = 'Logout', bg='#A877BA',font = 'bold', command = clientLogin.destroy)
+clientLogin.grid(row = 20, column = 12)
+
+clientLogin.mainloop()
