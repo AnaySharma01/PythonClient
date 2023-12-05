@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import *
-from clientLogin import *
+from tkinter import ttk
+from tkinter import font
+from tkinter import messagebox
+from loginPage import *
 
 GUI = tk.Tk()
 GUI.configure(bg = '#639c8f')
